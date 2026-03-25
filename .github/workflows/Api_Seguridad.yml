@@ -1,9 +1,9 @@
 name: Deploy Seguridad API to Azure
 
 env:
-  AZURE_WEBAPP_NAME:         APISeguridadCesar
+  AZURE_WEBAPP_NAME: 'APISeguridadCesar'
   AZURE_WEBAPP_PACKAGE_PATH: './Seguridad/Seguridad.API/API'
-  DOTNET_VERSION:            '8.0'
+  DOTNET_VERSION: '8.0'
 
 on:
   push:
@@ -18,7 +18,7 @@ permissions:
 jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
-environment:
+    environment:
       name: 'Production-Database'
 
     steps:
@@ -46,7 +46,7 @@ environment:
           dotnet restore "Flujo/Flujo.csproj"
           dotnet restore "Reglas/Reglas.csproj"
           dotnet restore "API/API.csproj"
-	  dotnet restore "Helpers/Helpers.csproj"
+          dotnet restore "Helpers/Helpers.csproj"
 
       - name: Compilar
         run: |
@@ -64,6 +64,6 @@ environment:
       - name: Deploy a Azure Web App
         uses: azure/webapps-deploy@v3
         with:
-          app-name:        ${{ env.AZURE_WEBAPP_NAME }}
+          app-name: ${{ env.AZURE_WEBAPP_NAME }}
           publish-profile: ${{ secrets.AZURE_WEBAPP_PUBLISH_PROFILE_SEGURIDAD }}
-          package:         './Seguridad/Seguridad.API/API/publish'
+          package: './Seguridad/Seguridad.API/API/publish'
