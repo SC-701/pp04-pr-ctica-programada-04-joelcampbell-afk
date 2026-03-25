@@ -1,0 +1,37 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.14.36518.9
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Abstracciones", "Abstracciones\Abstracciones.csproj", "{18BC4827-10BD-43BE-AE17-E7A847AFBFA6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Reglas", "Reglas\Reglas.csproj", "{3C66120E-E012-4655-AB59-FD8FF3E7D29F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Web", "Web\Web.csproj", "{C93C29B0-7459-4994-9419-FF943FFFF9F1}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{18BC4827-10BD-43BE-AE17-E7A847AFBFA6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{18BC4827-10BD-43BE-AE17-E7A847AFBFA6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{18BC4827-10BD-43BE-AE17-E7A847AFBFA6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{18BC4827-10BD-43BE-AE17-E7A847AFBFA6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3C66120E-E012-4655-AB59-FD8FF3E7D29F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3C66120E-E012-4655-AB59-FD8FF3E7D29F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3C66120E-E012-4655-AB59-FD8FF3E7D29F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3C66120E-E012-4655-AB59-FD8FF3E7D29F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C93C29B0-7459-4994-9419-FF943FFFF9F1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C93C29B0-7459-4994-9419-FF943FFFF9F1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C93C29B0-7459-4994-9419-FF943FFFF9F1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C93C29B0-7459-4994-9419-FF943FFFF9F1}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {B070D589-EA4D-41FD-A8EA-97020C2F34D9}
+	EndGlobalSection
+EndGlobal
